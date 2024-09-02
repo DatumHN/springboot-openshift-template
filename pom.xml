@@ -48,11 +48,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Spring Boot Starter Cache (DataGrid integration) -->
+        <!-- Spring Boot Starter Cache (Infinispan integration) -->
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-spring-boot-starter-embedded</artifactId>
-            <version>14.0.0</version>
+            <version>13.0.0.Final</version> <!-- Verifica que esta versión esté disponible -->
         </dependency>
 
         <!-- Swagger (OpenAPI) -->
