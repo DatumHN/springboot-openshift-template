@@ -2,7 +2,7 @@ package dev.snowdrop.example.service;
 import org.springframework.cache.annotation.Cacheable;
 
 // tag::snippet-greeting[]
-@Cacheable("myCache")
+@Cacheable("miCache")
 public class Greeting {
 
     public static final String FORMAT = "Hola, %s!";
