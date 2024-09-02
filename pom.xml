@@ -137,6 +137,12 @@
     <groupId>org.infinispan</groupId>
     <artifactId>infinispan-spring-boot-starter-embedded</artifactId>
     <version>14.0.31.Final</version>
+    <exclusions>
+        <exclusion>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-commons</artifactId>
+        </exclusion>
+    </exclusions>
 </dependency>
 
 <!-- H2 -->
