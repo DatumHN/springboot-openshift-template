@@ -1,6 +1,7 @@
 package dev.snowdrop.example.service;
 
 // tag::snippet-greeting[]
+@Cacheable("myCache")
 public class Greeting {
 
     public static final String FORMAT = "Hola, %s!";
