@@ -21,11 +21,11 @@
     <artifactId>snowdrop-dependencies</artifactId>
     <version>2.5.12.Final</version>
   </parent>
-  <groupId>com.yourcompany.newapp</groupId>
-  <artifactId>sore-shake</artifactId>
+  <groupId>com.compania.newapp</groupId>
+  <artifactId>springboot-openshift-template</artifactId>
   <version>1.0.0</version>
-  <name>Spring Boot - HTTP Example</name>
-  <description>Spring Boot - HTTP Example</description>
+  <name>Spring Boot - HTTP Ejemplo</name>
+  <description>Spring Boot - HTTP Ejemplo</description>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -132,7 +132,7 @@
 <dependency>
     <groupId>org.projectlombok</groupId>
     <artifactId>lombok</artifactId>
-    <version>1.18.28</version>
+    <version>1.18.34</version>
     <scope>provided</scope>
 </dependency>
 
