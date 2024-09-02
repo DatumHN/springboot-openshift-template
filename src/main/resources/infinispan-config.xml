@@ -1,7 +1,7 @@
 <infinispan>
   <cache-container>
     <local-cache-manager>
-      <distributed-cache name="myCache">
+      <distributed-cache name="miCache">
         <expiration max-idle="300000"/>
         <store>
           <file-store path="data"/>
