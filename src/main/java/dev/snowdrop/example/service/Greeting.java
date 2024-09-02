@@ -1,4 +1,5 @@
 package dev.snowdrop.example.service;
+import org.springframework.cache.annotation.Cacheable;
 
 // tag::snippet-greeting[]
 @Cacheable("myCache")
