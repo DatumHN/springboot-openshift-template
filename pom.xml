@@ -131,12 +131,12 @@
 <dependency>
     <groupId>org.infinispan</groupId>
     <artifactId>infinispan-core</artifactId>
-    <version>15.0.8.Final</version>
+    <version>14.0.0.Final</version>
 </dependency>
 <dependency>
     <groupId>org.infinispan</groupId>
     <artifactId>infinispan-spring-boot-starter-embedded</artifactId>
-    <version>15.0.8.Final</version>
+    <version>14.0.0.Final</version>
 </dependency>
 
 <!-- H2 -->
