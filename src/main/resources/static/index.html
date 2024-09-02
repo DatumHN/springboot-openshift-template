@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8">
     <title>API - Spring Boot</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-
-<body>
-<div class="container">
-    <div class="row">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
         <div class="sect1">
-<h2 id="_http_booster">HTTP Ejemplo</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Un ejemplo de mapeo simple de una operación comercial a un punto final remoto. Al adoptar este enfoque, los clientes utilizan el protocolo HTTP como mecanismo de transporte para llamar a los servicios. Los ingenieros de aplicaciones definen las API utilizando una interpretación amplia de los fundamentos de REST, lo que fomenta la libertad en el diseño y la creación rápida de prototipos.</p>
-</div>
-<div class="sect2">
-<h3 id="_using_the_greeting_service">Usando el servicio Greeting</h3>
-
-</div>
-</div>
-</div>
-
-        <form class="form-inline">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Alejandra">
+          <h2 id="_http_booster">HTTP Ejemplo</h2>
+          <div class="sectionbody">
+            <div class="paragraph">
+              <p>Un ejemplo de mapeo simple de una operación comercial a un punto final remoto. Al adoptar este enfoque, los clientes utilizan el protocolo HTTP como mecanismo de transporte para llamar a los servicios. Los ingenieros de aplicaciones definen las API utilizando una interpretación amplia de los fundamentos de REST, lo que fomenta la libertad en el diseño y la creación rápida de prototipos.</p>
             </div>
-            <button id="invoke" type="submit" class="btn btn-success">Invoke</button>
+            <div class="sect2">
+              <h3 id="_using_the_greeting_service">Usando el servicio Greeting</h3>
+            </div>
+          </div>
+        </div>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Alejandra">
+          </div>
+          <button id="invoke" type="submit" class="btn btn-success">Invoke</button>
         </form>
-
         <p class="lead">Result:</p>
-        <pre><code id="greeting-result">Invoque el servicio para ver el resultado.</code></pre>
+        <pre>
+								<code id="greeting-result">Invoque el servicio para ver el resultado.</code>
+							</pre>
+      </div>
     </div>
-</div>
-
-<hr>
-</div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="sect1">
+          <h2 id="_http_booster">HTTP Ejemplo</h2>
+          <div class="sectionbody">
+            <div class="paragraph">
+              <p class="lead">Click <a class="btn btn-success" href="/swagger-ui/" target="_blank">API Swagger</a> para abrir REST API's Swagger. </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-        <p class="lead">Click en <a class="btn btn-success" href="/swagger-ui/" target="_blank">API Swagger</a> para abrir la documentación de la API.</p>
-    </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-<script>
-  $(document).ready(function () {
-    $("#invoke").click(function (e) {
-      var n = $("#name").val() || "World";
-      $.getJSON("/api/greeting?name=" + n, function (res) {
-        $("#greeting-result").text(JSON.stringify(res));
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        $("#invoke").click(function(e) {
+          var n = $("#name").val() || "World";
+          $.getJSON("/api/greeting?name=" + n, function(res) {
+            $("#greeting-result").text(JSON.stringify(res));
+          });
+          e.preventDefault();
+        });
       });
-      e.preventDefault();
-    });
-  });
-</script>
-
-</body>
-
+    </script>
+  </body>
 </html>
