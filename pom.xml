@@ -131,18 +131,17 @@
 <dependency>
     <groupId>org.infinispan</groupId>
     <artifactId>infinispan-core</artifactId>
-    <version>14.0.31.Final</version>
+    <version>14.0.0.Final</version>
+</dependency>
+<dependency>
+    <groupId>org.infinispan</groupId>
+    <artifactId>infinispan-commons</artifactId>
+    <version>14.0.0.Final</version>
 </dependency>
 <dependency>
     <groupId>org.infinispan</groupId>
     <artifactId>infinispan-spring-boot-starter-embedded</artifactId>
-    <version>14.0.31.Final</version>
-    <exclusions>
-        <exclusion>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-commons</artifactId>
-        </exclusion>
-    </exclusions>
+    <version>14.0.0.Final</version>
 </dependency>
 
 <!-- H2 -->
