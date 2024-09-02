@@ -1,0 +1,12 @@
+<infinispan>
+  <cache-container>
+    <local-cache-manager>
+      <distributed-cache name="myCache">
+        <expiration max-idle="300000"/>
+        <store>
+          <file-store path="data"/>
+        </store>
+      </distributed-cache>
+    </local-cache-manager>
+  </cache-container>
+</infinispan>
