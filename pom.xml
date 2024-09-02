@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
- Copyright 2016-2017 Red Hat, Inc, and individual contributors.
-
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-
- http://www.apache.org/licenses/LICENSE-2.0
-
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
@@ -94,9 +79,9 @@
       <artifactId>openshift-junit</artifactId>
       <scope>test</scope>
       <!--
-      Workaround: We need to exclude annotations, otherwise Openshift always uses the Docker build in tests.
-      Reported by https://github.com/dekorateio/dekorate/issues/821.
-      The same happens with Dekorate 2.7.0.
+      Solución alternativa: debemos excluir las anotaciones; de lo contrario, Openshift siempre usa la compilación de Docker en las pruebas.
+      Reportado por https://github.com/dekorateio/dekorate/issues/821.
+      Lo mismo sucede con Dekorate 2.7.0.
       -->
       <exclusions>
         <exclusion>
@@ -110,9 +95,9 @@
       <artifactId>kubernetes-junit</artifactId>
       <scope>test</scope>
       <!--
-      Workaround: We need to exclude annotations, otherwise Openshift always uses the Docker build in tests.
-      Reported by https://github.com/dekorateio/dekorate/issues/821.
-      The same happens with Dekorate 2.7.0.
+      Solución alternativa: debemos excluir las anotaciones; de lo contrario, Openshift siempre usa la compilación de Docker en las pruebas.
+      Reportado por https://github.com/dekorateio/dekorate/issues/821.
+      Lo mismo sucede con Dekorate 2.7.0.
       -->
       <exclusions>
         <exclusion>
@@ -160,13 +145,13 @@
 <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-api</artifactId>
-    <version>5.9.3</version>
+    <version>5.11.0</version>
     <scope>test</scope>
 </dependency>
 <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-engine</artifactId>
-    <version>5.9.3</version>
+    <version>5.11.0</version>
     <scope>test</scope>
 </dependency>
   </dependencies>
