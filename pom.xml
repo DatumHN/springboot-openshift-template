@@ -100,6 +100,37 @@
             <artifactId>javax.ws.rs-api</artifactId>
             <version>2.1.1</version>
         </dependency>
+
+        <!-- Fabric8 Kubernetes Client -->
+        <dependency>
+            <groupId>io.fabric8</groupId>
+            <artifactId>kubernetes-client</artifactId>
+            <version>6.6.3</version>
+        </dependency>
+
+        <!-- Dekorate Testing Annotations -->
+        <dependency>
+            <groupId>io.dekorate</groupId>
+            <artifactId>testing-annotations</artifactId>
+            <version>2.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Dekorate OpenShift Testing Annotations -->
+        <dependency>
+            <groupId>io.dekorate</groupId>
+            <artifactId>openshift-testing-annotations</artifactId>
+            <version>2.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- RestAssured for testing -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
