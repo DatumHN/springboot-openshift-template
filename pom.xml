@@ -162,7 +162,7 @@
     <dependency>
         <groupId>org.apache.activemq.artemis</groupId>
         <artifactId>artemis-jms-client</artifactId>
-        <version>2.37.0</version>
+        <version>2.20.0</version> <!-- Verifica que esta versión esté disponible -->
     </dependency>
 
 <!-- JUnit -->
