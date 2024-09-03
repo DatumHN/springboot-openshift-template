@@ -152,7 +152,6 @@
 </dependency>
 
 <!-- AMQ -->    
-</dependency>
 <!-- Dependencia para usar Spring JMS -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
