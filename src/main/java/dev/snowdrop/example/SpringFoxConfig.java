@@ -36,9 +36,9 @@ public class SpringFoxConfig {
 	
 	 public ApiInfo apiInfo() { 
 	        return new ApiInfoBuilder()
-	            .title("Catalogos API")
+	            .title("Ejemplo API")
 	            .description(
-	                "Api para obtener los registros de los catalogos en la Base de Datos de Clasificadores.")
+	                "API que funciona como plantilla base para futuros proyectos de backend creado con Spring Framework y que se desplegarán en la nube utilizando OpenShift.")
 	            .version("1.0.0")
 	            .build();                                        
 	    }
